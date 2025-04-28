@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Gothic";
+  src: url("/gothic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gothic";
+  src: url("/gothic_bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@layer base {
+  body {
+    font-family: "Gothic", system-ui, sans-serif;
+  }
+}
